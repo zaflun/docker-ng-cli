@@ -19,4 +19,5 @@ RUN yarn global add @angular/cli@$ANGULAR_CLI_VERSION && \
 		build-essential \
 		python \
 		rsync \
-		parallel
+		parallel \
+	&& rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
