@@ -5,7 +5,7 @@ MAINTAINER zaflun UG "developer@zaflun.com"
 # reduce logging, disable angular-cli analytics for ci environment
 ENV NPM_CONFIG_LOGLEVEL=warn NG_CLI_ANALYTICS=false
 
-ARG ANGULAR_CLI_VERSION=10.0.4
+ARG ANGULAR_CLI_VERSION=10.0.5
 LABEL angular-cli=$ANGULAR_CLI_VERSION node=$NODE_VERSION
 
 RUN yarn global add @angular/cli@$ANGULAR_CLI_VERSION && \
